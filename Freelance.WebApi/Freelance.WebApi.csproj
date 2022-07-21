@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.90" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.18" />
+    <PackageReference Include="Npgsql" Version="5.0.7" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.8.10" />
+    <PackageReference Include="System.Drawing.Freelance.WebApi.Common" Version="5.0.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.12.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Freelance.WebApi.Common\Freelance.WebApi.Common.csproj" />
+    <ProjectReference Include="..\Freelance.WebApi.Common\Freelance.WebApi.Freelance.WebApi.Common.csproj" />
+    <ProjectReference Include="..\Contracts\Freelance.WebApi.Contracts.csproj" />
+    <ProjectReference Include="..\Freelance.WebApi.Freelance.WebApi.Common\Freelance.WebApi.Freelance.WebApi.Common.csproj" />
+    <ProjectReference Include="..\Freelance.WebApi.Contracts\Freelance.WebApi.Contracts.csproj" />
+  </ItemGroup>
+
+
+</Project>
